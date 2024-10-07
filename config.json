@@ -1,0 +1,10 @@
+{
+    "interface": {
+      "types": ["docker.logdriver/1.0"],
+      "socket": "fluentd.sock"
+    },
+    "linux": {
+      "capabilities": ["CAP_SYSLOG"]
+    },
+    "propagatedMount": "/var/lib/docker/plugins"
+  }
